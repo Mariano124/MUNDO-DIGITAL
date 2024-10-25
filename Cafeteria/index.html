@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Alice&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="imagen/logo.png" type="image/png">
+    <title>MUNDO DIGITAL</title>
+
+</head>
+
+<body class="">
+    <header class="h-screen w-full " style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+            url('imagen/portada.jpg'); background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center; " id="inicio">
+        <nav class="pt-4 py-4 fixed w-full z-10 top-0 " id="navegador">
+            <div class="max-w-screen-xl mx-auto flex justify-between items-center px-5 2xl:px-0">
+                <div class="">
+                    <img src="imagen/6c9ea3db-0239-44f0-bdbd-f5ef890ce624.jpg" alt="Logo" class="w-full h-20 mt-[-12px]">
+                </div>
+
+                <button id="menu_button" type="button" class="block md:hidden z-20 focus:outline-none text-[#C8A27A]">
+                    <i class="fa-solid fa-bars fa-2x"></i>
+                </button>
+
+                <div class="hidden absolute top-16 md:flex md:relative md:top-0 w-full left-0 md:w-auto" id="menu">
+                    <div class="flex flex-col md:flex-row text-center bg-[#FFEED8] md:bg-transparent">
+                        <a href="#inicio"
+                            class="menu-link font-bold md:mx-4 py-4 md:py-0 hover:bg-[#C8A27A] text-[#603809] md:text-white md:hover:bg-transparent">Inicio</a>
+                        <a href="#sobreNosotros"
+                            class="menu-link font-bold md:mx-4 py-4 md:py-0 hover:bg-[#C8A27A] text-[#603809] md:text-white md:hover:bg-transparent">Sobre
+                            Nosotros</a>
+                        <a href="#menu_cafe"
+                            class="menu-link font-bold md:mx-4 py-4 md:py-0 hover:bg-[#C8A27A] text-[#603809] md:text-white md:hover:bg-transparent">Menu</a>
+                        <a href="#contacto"
+                            class="menu-link font-bold md:mx-4 py-4 md:py-0 hover:bg-[#C8A27A] text-[#603809] md:text-white md:hover:bg-transparent">Contacto</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="max-w-screen-xl mx-auto h-screen flex items-center  px-8 2xl:px-0">
+            <div class=" px-4">
+                <h1 class="font-alfa text-white text-3xl md:text-5xl  mb-4">Comienza tu dia <br>con <span
+                        class="text-[#F9C06A]">internet.</span></h1>
+                <p class="text-white max-w-md font-alice my-12 ">
+                    Descubre los mejores server que jamás<br>
+                    hayas probado. Ofrecemos lo mejor para nuestros<br>
+                    clientes.Internet ilimitado sin limites.
+                </p>
+                
+            </div>
+        </div>
+    </header>
+
+    <section id="sobreNosotros" class="relative py-14 md:py-16 ">
+        
+        <div class="max-w-screen-xl mx-auto px-10 md:px-10 2xl:px-4">
+            <div class="flex flex-col md:flex-row justify-between md:gap-14">
+                <div class="md:w-1/2">
+
+                    <h2 class="text-4xl font-bold mb-10  text-[#603809]  md:mb-6 ">Sobre nosotros</h2>
+                    <p class="text-gray-700 font-alice  md:text-base mb-8 max-w-sm">
+                        Somos una empresa líder en el sector digital, comprometida con la innovación y la creatividad. Nuestro objetivo es superar los límites establecidos, ofreciendo soluciones únicas y adaptadas a las necesidades de nuestros clientes. ¡Trabajamos cada día para llevar tus ideas más allá de lo imaginable!
+                    </p>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="imagen/mariano.jpg" alt="Interior de la cafetería" class="w-full h-96 rounded-lg shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    
+    
+    
+    <footer class="bg-[#FFEED8] text-[#603809] py-4 border-t border-[#603809]">
+        <div class="max-w-screen-xl mx-auto px-4">
+
+            <div class="text-center ">
+                <p class="text-sm">&copy; 2024 Mundo Digital.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="bg-green-600 rounded-full w-14 h-14 flex items-center justify-center fixed bottom-10 right-5">
+        <button class="w-full" id="wsp_veterinaria">
+            <i class="fa-brands fa-whatsapp text-white text-4xl "></i>
+        </button>
+    </div>
+
+    <script src="index.js"> </script>
+</body>
+
+</html>
